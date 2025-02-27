@@ -1,0 +1,11 @@
+{
+  "name": "@zja/components",
+  "version": "0.1.0",
+  "compilerOptions": { "jsx": "react-jsx", "jsxImportSource": "preact" },
+  "exports": "./src/index.ts",
+  "imports": {
+    "@cronitorio/cronitor-rum": "npm:@cronitorio/cronitor-rum@^0.4.1",
+    "preact": "npm:preact@^10.26.2"
+  },
+  "license": "MIT"
+}

@@ -5,7 +5,10 @@
   "exports": "./src/index.ts",
   "imports": {
     "@cronitorio/cronitor-rum": "npm:@cronitorio/cronitor-rum@^0.4.1",
-    "preact": "npm:preact@^10.26.2"
+    "@deno/gfm": "jsr:@deno/gfm@^0.10.0",
+    "marked-smartypants": "npm:marked-smartypants@^1.1.9",
+    "preact": "npm:preact@^10.26.2",
+    "prismjs": "npm:prismjs@^1.30.0"
   },
   "license": "MIT"
 }

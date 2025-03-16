@@ -8,8 +8,9 @@ export default function Header(props: Props) {
   return (
     <header {...props}>
       <nav>
-        {Object.entries(props.items).map(([key, val]) => <a href={val}>{key}
-        </a>)}
+        {Object.entries(props.items).map(([key, val]) => (
+          <a href={val} key={key}>{key}</a>
+        ))}
       </nav>
     </header>
   );

@@ -1,8 +1,10 @@
-interface Props {
+import type { JSX } from "preact";
+
+export interface Props {
   url: string;
 }
 
-export default function Canonical(props: Props) {
+export default function Canonical(props: Props): JSX.Element {
   return (
     <>
       <meta property="og:url" content={props.url} />

@@ -5,5 +5,5 @@ interface Props {
 }
 
 export default function Code({ children }: Props) {
-  return <pre> <code>{children}</code></pre>;
+  return <pre><code>{children}</code></pre>;
 }

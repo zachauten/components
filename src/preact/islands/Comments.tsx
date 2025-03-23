@@ -1,5 +1,6 @@
 // Have to use esm to set compat aliases, and exclude the included preact
-import Giscus from "https://esm.sh/@giscus/react@3.1.0?alias=react:preact/compat&alias=react-dom:preact/compat&external=preact";
+// import Giscus from "https://esm.sh/@giscus/react@3.1.0?alias=react:preact/compat&alias=react-dom:preact/compat&external=preact";
+import Giscus from "@giscus/react";
 
 interface Props {
   repo: `${string}/${string}`;

@@ -6,8 +6,17 @@ interface Props {
   key: string;
 }
 
-// Must be an "Island" in Fresh. Remote islands aren't supported until Fresh 2.0
-export default function Analytics(props: Props) {
+/**
+ *  A provider for Cronitor analytics. Use in application wrapper.
+ *
+ * @typedef Props
+ * @property {ComponentChildren} children - Child components.
+ * @property {string} key - The Cronitor api key.
+ *
+ * @param {Props} props
+ * @returns {JSX.Element}
+ */
+export default function CronitorProvider(props: Props) {
   if (typeof document === "undefined") {
     return;
   }

@@ -60,6 +60,15 @@ interface Props {
   children: ComponentChildren;
 }
 
+/**
+ *  Set the OpenTelemetry trace provider. Use in the application wrapper.
+ *
+ * @typedef Props
+ * @property {ComponentChildren} children - The children components of the provider.
+ *
+ * @param {Props} props
+ * @returns {JSX.Element}
+ */
 export default function TraceProvider({ children }: Props) {
   return children;
 }

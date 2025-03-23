@@ -7,6 +7,16 @@ interface Props {
   repoId: string;
 }
 
+/**
+ *  A component to display comments with Giscus.
+ *
+ * @typedef Props
+ * @property {`${string}/${string}`} repo - The repository to use for comments.
+ * @property {string} repoId - The repository ID.
+ *
+ * @param {Props} props
+ * @returns {JSX.Element}
+ */
 export default function Comments(props: Props) {
   return (
     <div className="comments-container">

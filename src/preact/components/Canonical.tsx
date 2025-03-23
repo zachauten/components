@@ -1,10 +1,17 @@
-import type { JSX } from "preact";
-
 export interface Props {
   url: string;
 }
 
-export default function Canonical(props: Props): JSX.Element {
+/**
+ *  Set the canonical link and og:url meta tags.
+ *
+ * @typedef Props
+ * @property {string} url - The URL of the canonical link.
+ *
+ * @param {Props} props
+ * @returns {JSX.Element}
+ */
+export default function Canonical(props: Props) {
   return (
     <>
       <meta property="og:url" content={props.url} />

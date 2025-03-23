@@ -10,6 +10,17 @@ import "prismjs/components/prism-bash.js";
 
 Marked.marked.use(markedSmartypants());
 
+/**
+ * Render markdown to HTML.
+ *
+ * @typedef MarkdownProps
+ * @property {string} source - The markdown source to render.
+ * @property {string} baseURL - The base URL for relative links.
+ * @property {string} mediaBaseURL - The base URL for media.
+ *
+ * @param {MarkdownProps} props
+ * @returns {JSX.Element}
+ */
 export default function Markdown(
   { source, baseURL, mediaBaseURL }: {
     source: string;
